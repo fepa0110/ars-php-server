@@ -13,13 +13,11 @@
             </nav>
         </header>
 
-
-
         <h1>Home</h1>
 
-        <p class="notice">
+        <!-- <p class="notice">
             Que tenga estos colores no quiere decir que sea del madryn...
-        </p>
+        </p> -->
 
     </body>
 </html>

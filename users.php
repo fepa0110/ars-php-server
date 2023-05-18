@@ -37,6 +37,7 @@
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Permission Level</th>
+                    <th>Borrar</th>
                     </tr>
                 </thead>
             <tbody>';
@@ -49,6 +50,9 @@
                     '<td>'.$user->firstName.'</td>'.
                     '<td>'.$user->lastName.'</td>'.
                     '<td>'.$user->permissionLevel.'</td>'.
+                    '<td><form action="PUT"><button type="submit" value="submit">Guardar</button></form></td>'.
+                    '<a class="button" href="./newUser.php">Borrar</a></td>'.
+                    
                 '</tr>';
             }
                 echo '

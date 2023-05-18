@@ -28,19 +28,20 @@
             $permissionLevel = $_POST['permissionLevel'];
 
             $postData = array(
-                "email"=>"pepe@mail.com", 
-                "password"=>"123",
-                "firstName"=>"pepe",
-                "lastName"=>"pepedo",
-                "permissionLevel"=>"1"
+                "email"=>$_POST["email"], 
+                "password"=>$_POST["password"],
+                "firstName"=>$_POST["firstName"],
+                "lastName"=>$_POST["lastName"],
+                "permissionLevel"=>$_POST["permissionLevel"]
             );
 
             
             $jsonData = json_encode($postData);
             
-            consoleLog($jsonData);
-
+            
             $url = 'http://localhost:3000/users';
+            
+            consoleLog($jsonData);
 
             $jsonResponse = rest_call('POST',$url, $jsonData,'appplication/json');
             
