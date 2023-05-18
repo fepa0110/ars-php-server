@@ -1,8 +1,25 @@
 <!DOCTYPE html>
-<h1>HOLA</h1>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <title>Home</title>
+    </head>
+    <body>
 
-<?php 
-    include './call-api.php'
-    
-    rest_call("GET","http://localhost:3000/users",false,false,false);
-?>
+        <header>
+            <nav>
+                <a class="current" href="./">Home</a>
+                <a href="./users.php">Usuarios</a>
+            </nav>
+        </header>
+
+
+
+        <h1>Home</h1>
+
+        <p class="notice">
+            Que tenga estos colores no quiere decir que sea del madryn...
+        </p>
+
+    </body>
+</html>

@@ -1,5 +1,4 @@
 <?php 
-
     function rest_call($method, $url, $data = false, $contentType= false, $token = false){
         $curl = curl_init();
 
