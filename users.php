@@ -38,12 +38,12 @@
 
         consoleLog($userObject);
     }
-    else{
+    // else{
         $result = rest_call("GET",$url,false,false,false);
         $userObject = json_decode($result);
     
         render_table($userObject);
-    }
+    // }
 
     
     function render_table($userData){
@@ -77,11 +77,14 @@
                             '<button class="button" type="submit" value="submit"><i class="gg-trash"></i></button>'.
                             '</form>'.
                     '</td>'.
-                    '<td><form action="userEdit.php" method="GET">'.
+                    '<td><form action="./editUser.php" method="GET">'.
                             '<div hidden>'.
                                 '<input type="text" name="id" value="'.$user->id.'"/>'.
                             '</div>'.
-                            '<button class="button" style="padding-top: 1rem; padding-bottom: 1rem;" type="submit" value="submit" href="./userEdit.php"><i class="gg-pen"></i></button>'.
+                                '<button class="button" style="padding-top: 1rem; padding-bottom: 1rem;" type="submit" value="submit" >
+                                    <i class="gg-pen">
+                                    </i>
+                                </button>'.
                             '</form>'.
                     '</td>'.
                 '</tr>';

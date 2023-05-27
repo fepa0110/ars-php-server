@@ -38,7 +38,6 @@
             
             $jsonData = json_encode($postData);
             
-            
             $url = 'http://localhost:3000/users';
             
             consoleLog($jsonData);
